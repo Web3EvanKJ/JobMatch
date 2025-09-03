@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Blog() {
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-5xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-6 text-blue-600">Blog</h1>
       <div className="space-y-6">
         {blogs.map((blog) => (

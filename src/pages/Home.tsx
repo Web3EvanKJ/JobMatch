@@ -70,7 +70,7 @@ const Home = () => {
       {/* Job Listings */}
       <section id="job-listings" className="max-w-3xl mx-auto py-16 px-6">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10 gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="text-2xl md:text-3xl font-bold text-blue-600">
             Latest Job Listings
           </h2>
           <p className="text-gray-600 text-sm">

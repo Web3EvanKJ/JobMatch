@@ -4,9 +4,9 @@ import { SalaryTable } from "@/components/SalaryTable";
 
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto py-12 px-4">
+    <div className="max-w-5xl mx-auto py-12 px-4">
       {/* Company Info */}
-      <div className="border-2 p-6 rounded-md flex flex-col gap-4 mb-4">
+      <div className=" flex flex-col gap-4 mb-4">
         <h1 className="font-bold text-3xl text-blue-600">JobMatch</h1>
         <p className="">
           JobMatch is your ultimate gateway to the Web3 job world! We connect
