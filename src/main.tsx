@@ -5,13 +5,17 @@ import { BrowserRouter } from "react-router";
 import { AuthProvider } from "./context/AuthContext";
 import "./index.css";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <Navbar />
-        <App />
+        <div className="font-display">
+          <Navbar />
+          <ScrollToTop />
+          <App />
+        </div>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
