@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Link
               to="/login"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              className="px-4 py-2 bg-blue-600 font-bold text-white rounded-lg hover:bg-blue-700 transition"
             >
               Login
             </Link>
@@ -75,34 +75,36 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-64">
                 <SheetHeader>
-                  <SheetTitle>Menu</SheetTitle>
+                  <SheetTitle className="text-blue-600 font-extrabold">
+                    Menu
+                  </SheetTitle>
                 </SheetHeader>
 
                 <div className="flex flex-col space-y-4 mt-4">
                   <Link
                     to="/"
-                    className="hover:text-blue-600 mx-4"
+                    className="text-blue-600 font-bold mx-4"
                     onClick={handleLinkClick}
                   >
                     Jobs
                   </Link>
                   <Link
                     to="/talent"
-                    className="hover:text-blue-600 mx-4"
+                    className="text-blue-600 font-bold mx-4"
                     onClick={handleLinkClick}
                   >
                     Talent
                   </Link>
                   <Link
                     to="/blog"
-                    className="hover:text-blue-600 mx-4"
+                    className="text-blue-600 font-bold mx-4"
                     onClick={handleLinkClick}
                   >
                     Blog
                   </Link>
                   <Link
                     to="/about"
-                    className="hover:text-blue-600 mx-4"
+                    className="text-blue-600 font-bold mx-4"
                     onClick={handleLinkClick}
                   >
                     About
