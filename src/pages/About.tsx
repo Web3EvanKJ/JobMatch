@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
       {/* Company Info */}
-      <div className="flex flex-col gap-4 mb-4">
-        <h1 className="font-bold text-3xl">JobMatch</h1>
+      <div className="border-2 p-6 rounded-md flex flex-col gap-4 mb-4">
+        <h1 className="font-bold text-3xl text-blue-600">JobMatch</h1>
         <p className="">
           JobMatch is your ultimate gateway to the Web3 job world! We connect
           talented professionals with top blockchain and crypto companies,
@@ -23,7 +23,7 @@ const About = () => {
 
       {/* Salary Table */}
       <div className="overflow-x-auto">
-        <h2 className="font-bold text-2xl mb-4">Salary Table</h2>
+        <h2 className="font-bold text-2xl mb-4 text-blue-600">Salary Table</h2>
         <SalaryTable />
       </div>
     </div>
