@@ -8,6 +8,7 @@ import JobDetail from "./pages/JobDetail";
 import MyApplications from "./pages/MyApplications";
 import MyJobPosts from "./pages/MyJobPosts";
 import ApplicantsList from "./pages/ApplicantsList";
+import JobList from "./pages/JobList";
 import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
@@ -17,7 +18,24 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/job/:id" element={<JobDetail />} />
+
+      {/* All Logged In Users */}
+      <Route
+        path="/job/:id"
+        element={
+          <PrivateRoute role="all">
+            <JobDetail />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/job-list"
+        element={
+          <PrivateRoute role="all">
+            <JobList />
+          </PrivateRoute>
+        }
+      />
 
       {/* Applicant */}
       <Route
